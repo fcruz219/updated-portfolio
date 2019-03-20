@@ -3,7 +3,8 @@ body {
   font-size: 18px;
   line-height: 34px;
   color: #777777;
-  background: url("../images/concrete_seamless.png");
+  background: url("../images/wallpaper.jpeg");
+  flex-wrap: wrap;
 }
 
 * {
@@ -35,7 +36,7 @@ h2,
 h3 {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: 700;
-  color: #4aaaa5;
+  color: #b8c4c3;
 }
 
 h1 {
@@ -58,8 +59,8 @@ h3 {
   width: 100%;
   margin: 0 0 30px;
   overflow: auto;
-  color: #ffffff;
-  background: #ffffff;
+  color: white;
+  background: rgb(156, 156, 156,0.9);
   border-bottom: 2px solid #cccccc;
 }
 
@@ -74,7 +75,7 @@ h3 {
   color: #ffffff;
   text-align: center;
   text-decoration: none;
-  background: #4aaaa5;
+  background: rgb(128, 125, 125);
 }
 
 nav {
@@ -87,7 +88,7 @@ nav a {
   padding-left: 15px;
   margin-left: 15px;
   line-height: 18px;
-  color: #999;
+  color: white;
   text-decoration: none;
   border-left: 1px solid #efefef;
 }
@@ -99,14 +100,14 @@ nav a:first-child {
 /* footer */
 
 footer {
-  padding: 30px 0;
+  padding: 35px 0;
   clear: both;
   font-size: 12px;
   color: #ffffff;
-  color: #cccccc;
+  color: white;
   text-align: center;
-  background: #666666;
-  border-top: 8px solid #4aaaa5;
+  background: rgb(128, 125, 125);
+  border-top: 8px solid darkgray;
   height: 50px;
 }
 
@@ -124,10 +125,35 @@ h3, h2 {
   min-height: calc(100vh - 70px);
 }
 
+#link-container {
+  margin-left: 20px;
+  min-height: calc(100vh - 70px);
+}
+
+.main-sectionone {
+  float: left;
+  width: 70%;
+  margin-right: 20px;
+  max-width: 600px;
+  padding: 30px;
+  margin: 0 0 40px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+}
 .main-section {
   float: left;
   width: 100%;
-  max-width: 960px;
+  margin-right: 20px;
+  padding: 30px;
+  margin: 0 0 40px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+}
+.link-section {
+  float: right;
+  margin-left: 20px;
+  width: 35%;
+  max-width: 350px;
   padding: 30px;
   margin: 0 0 40px;
   background: #ffffff;
@@ -215,6 +241,14 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+.icons{
+  max-height: 60px;
+  max-width: 60px;
+}
+.images{
+  width: 300px;
+  height: 250px;
+}
 @media screen and (max-width: 980px) {
   .main-section {
     width: 70%;
@@ -232,7 +266,7 @@ input[type=submit] {
 @media screen and (max-width: 768px) {
 .main-section {
   width: 93%;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 footer {
   width: 100%;
@@ -246,7 +280,17 @@ footer {
   nav {
   margin-right: 30px;
   }
+  
+  .link-section {
+    width: 70%;
+    max-width: 600px;
+    padding: 30px;
+    margin: 0 0 40px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+  }
 }
+
 
 @media screen and (max-width: 640px) {
   #mainhead #logo {
@@ -265,7 +309,7 @@ footer {
  }
   .main-section {
     margin-top: 60px;
-    margin-bottom: 300px;
+    margin-bottom: 20px;
   }
   .work {
     width: 100%;
